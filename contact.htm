@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!--
+    *****************************************************************************
+    Title: Contact Us Page 
+    Use: Contact Page for Bicycle Shop Website
+    Author: Hunter Guthrie
+    School/Term: Southern Illinois University, Fall 2022
+    Developed: Oct 30, 2022
+    Tested: Oct 30, 2022
+    ******************************************************************************
+    -->
+    <title>Contact Us</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta name="description" content="Contact Page">
+    <meta name="author" content="Hunter Guthrie">
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="CSS/slicknav.css">
+    <link rel="shortcut icon" href="Images/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="JS/jquery.slicknav.min.js" type="text/javascript"></script>
+    
+    <!--SlickNav Menu Script for Mobile Devices-->
+    <script type="text/javascript"> $(document).ready(function(){
+      $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); }); </script>
+
+  </head>
+
+  <body id="contactUsBody">
+    <h1>Contact Information</h1>
+    <nav id="mobile_menu"></nav> 
+    <nav id="nav_menu">
+      <ul>
+        <li><a href="index.htm">Home</a></li>
+        <li><a href="rentals.htm">Bicycle Rentals</a></li>
+        <li><a href="sales.htm">Bicycles For Sale</a></li>
+        <li><a href="services.htm">Bicycle Services</a></li>
+        <li><a href="contact.htm">Contact Us</a></li>
+      </ul>
+    </nav>
+    <h3>Please use this form to contact our store:</h3>
+    <form id="contactUsForm" method="POST" action="response.htm">
+      <p class="formInput">
+        <label for="FullName">Full Name:</label>
+        <input type="text" id="FullName" placeholder="Full Name" minLength="15" maxLength="25" autofocus required>
+      </p>
+      <p class="formInput">
+        <label for="Address">Address:</label>
+        <input type="text" id="Address" placeholder="Address" minLength="15" maxLength="50" required>
+      </p>
+      <p class="formInput">
+        <label for="City">City:</label>
+        <input type="text" id="City" placeholder="City" minLength="4" maxLength="25" required>
+      </p>
+      <p class="formInput">
+        <label for="State">State:</label>
+        <select id="State" required>
+        <option value="Illinois">Illinois</option>
+        <option value="Michigan">Michigan</option>
+        <option value="Wisconsin">Wisconsin</option>
+        <option value="Iowa">Iowa</option>
+        <option value="Missouri">Missouri</option>
+        <option value="Indiana">Indiana</option>
+        </select>
+      </p>
+      <p class="formInput">
+        <label for="Zip">Zip:</label>
+        <input type="text" id="Zip" placeholder="Zip" minLength="5" maxLength="10" pattern="\d{5}([\-]\d{4})?"
+          title="Must be 99999 or 99999-9999"><br>
+      </p>
+      <p class="formInput">
+        <label for="Phone">Phone Number:</label>
+        <input type="tel" id="Phone" placeholder="Phone Number" minLength="10" maxLength="12" pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+          title="Must be 999-999-9999"><br>
+      </p>
+      <p class="formInput">
+        <label for="Email">Email Address:</label>
+        <input type="email" id="Email" placeholder="Email" minLength="10" maxLength="25" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          title="Please enter a valid email address"><br>
+      </p>
+      <p class="formInput">
+        <label for="SubmissionDate">Submission Date:</label>
+        <input type="date" id=SubmissionDate required><br>
+      </p>
+      <p class="formInput">
+        <label for="inquiryType">Inquiry Type:</label><br>
+        <input type="checkbox" id="inquiryType" name="InquiryType" value="Sales">Sales<br>
+        <input type="checkbox" id="inquiryType" name="InquiryType" value="Service">Service<br>
+        <input type="checkbox" id="inquiryType" name="InquiryType" value="Rental">Rental<br>
+      </p>
+      <p class="formInput">
+        <label for="bicycleType">Bicycle Type:</label><br>
+        <input type="radio" id="bicycleType" name="Bicycle" value="Aventure" required>Aventure Ebike<br>
+        <input type="radio" id="bicycleType" name="Bicycle" value="Retrospec">Retrospec Atlas<br>
+        <input type="radio" id="bicycleType" name="Bicycle" value="Colnago">Colnago C68<br>
+        <input type="radio" id="bicycleType" name="Bicycle" value="Marin">Marin Alpine<br>
+      </p>
+      <p class="formInput">
+        <label for="createPassword">Create Password:</label>
+        <input type="password" id="createPassword" required></p>
+      </p>
+      <p class="formInput">
+        <label for="Message">Message:</label>
+        <textarea id="Message" placeholder="Please leave your message here" minLength="20" maxLength="200" required></textarea><br>
+      </p>
+      <br>
+      <div>
+        <span>
+          <label for="Submit"></label>
+          <input type="submit" id="Submit"/>
+        </span>
+        <span>
+          <label for="Reset"></label>
+          <input type="reset" id="Reset">
+        </span>
+      </div>
+    </form>
+    <footer>
+      <p>
+        <strong> Contact us: </strong>
+        <br>
+        123 N Main St, Normal, IL
+        <br>
+        309-867-5309
+        <br>
+        <a href="https://siu.edu/">www.siu.edu</a>
+      </p>
+    </footer>
+  </body>
+
+</html>

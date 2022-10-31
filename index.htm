@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <!-- 
+    *****************************************************************************
+    Title: Bike Page
+    Use: To learn HTML/CSS
+    Author: Hunter Guthrie
+    School/Term: Southern Illinois University, Fall 2022
+    Developed: Oct 12, 2022 
+    Tested: Oct 12, 2022; Passed on Chrome and Edge browsers.
+    ******************************************************************************
+    -->
+    <title>Guthrie's Bikes</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta name="description" content="Main Bike Shop Page">
+    <meta name="author" content="Hunter Guthrie">
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="CSS/slicknav.css">
+    <link rel="shortcut icon" href="Images/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="JS/jquery.slicknav.min.js" type="text/javascript"></script>
+    
+    <!--SlickNav Menu Script for Mobile Devices-->
+    <script type="text/javascript"> $(document).ready(function(){
+      $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); }); </script>
+
+  </head>
+
+  <body id="mainPageBody">
+    <audio src="Media/index_song.mp3" autoplay loop></audio>
+    <div>
+      <h1 id="MainPageHeader">Guthrie's Bikes</h1>
+      <h2>Selling Bikes Since 2010</h2>
+    </div>
+    <nav id="mobile_menu"></nav> 
+    <nav id="nav_menu">
+      <ul>
+        <li><a href="index.htm">Home</a></li>
+        <li><a href="rentals.htm">Bicycle Rentals</a></li>
+        <li><a href="sales.htm">Bicycles For Sale</a></li>
+        <li><a href="services.htm">Bicycle Services</a></li>
+        <li><a href="contact.htm">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div>
+      <p>
+        We are a small locally owned shop with a passion for bikes. Our goal is to help you find the
+        perfect bike for you, at a price that you can afford.
+        <br><br>
+        Stop by and we'll get you riding today!
+      </p>
+      <div id="figureContainer">
+        <figure>
+          <p id="bikeImage"></p>
+          <figcaption><strong>Check out our Featured Bike! The 2022 Marin Alpine Trail Carbon 1.</strong></figcaption>
+        </figure>
+      </div>
+    </div>
+    <div>
+      <p> <strong> We have bikes on sale including: </strong> </p>
+      <ul id="bikeList">
+        <li>Aventure Ebike by Aventon</li>
+        <li>Retrospec Atlas Fitness Hybrid Bike</li>
+        <li>2022 Marin Alpine Trail Carbon 1</li>
+        <li>Colnago C68 Disc Road</li>
+      </ul>
+    </div>
+    <br><br>
+    <footer>
+      <p>
+        <strong> Contact us: </strong>
+        <br>
+        123 N Main St, Normal, IL
+        <br>
+        309-867-5309
+        <br>
+        <a href="https://siu.edu/">www.siu.edu</a>
+      </p>
+    </footer>
+  </body>
+</html>

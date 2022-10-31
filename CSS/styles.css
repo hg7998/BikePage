@@ -1,0 +1,290 @@
+/*
+*****************************************************************************
+Title: Bike Page CSS
+Use: To learn HTML/CSS
+Author: Hunter Guthrie
+School/Term: Southern Illinois University, Fall 2022
+Developed: Oct 30, 2022 
+Tested: Oct 30, 2022; Passed on Chrome and Edge browsers.
+******************************************************************************
+*/
+
+h1, h2, h3, h4 {
+    padding: 10px;
+}
+
+h1 {
+    font-size: 1.75em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+p {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+body {
+    text-align: center;
+    font-family: Arial;
+    font-size: 100%;
+}
+
+#mainPageBody {
+    background-color:lightblue;
+}
+
+#rentalsPageBody {
+    background-color:lightgray;
+}
+
+#salesPageBody {
+    background-color: whitesmoke;
+}
+
+#servicesPageBody {
+    background-color: ghostwhite;
+}
+
+#contactUsBody {
+    background-color: lightblue;
+}
+
+#responsePageBody {
+    background-color: lightgreen;
+}
+
+/* main page */
+#bikeImage {
+    background-image: url("../Images/Marin.jpg");
+    border: 3px solid black;
+    border-radius: 10px;
+    max-width: 300px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 10px black;
+}
+
+#bikeImage:hover {
+    background-image: url("../Images/Marin2.jpeg");
+    border: 3px solid black;
+    border-radius: 10px;
+    max-width: 300px;
+    height: 200px;
+}
+
+.rentalImage, .salesImage {
+    width: 100%;
+    border: 3px solid black;
+    border-radius: 10px;
+    max-width: 300px;
+    box-shadow: 5px 5px 10px black;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+/* main page */
+#bikeList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#bikeList li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    clear: both;
+    font-size: 0.75em;
+}
+
+#nav_menu ul {
+  list-style-type: none;
+  padding: 5px;
+  margin: 25px;
+  text-align: center;
+  background-color: black;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#nav_menu li {
+  display: inline;
+  margin: 50px;
+}
+
+#nav_menu a {
+  color: white;
+  text-decoration: none;
+  width: auto;
+}
+
+#figureContainer {
+  text-align: center;
+}
+
+figure {
+  margin-bottom: 25px;
+  display: inline-block;
+}
+
+#salesVideo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 290px;
+}
+
+#servicesDesc {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid black;
+  border-radius: 1%;
+  width: 80%;
+  height: 30%;
+  background-color: lightblue;
+}
+
+th {
+  padding: 15px;
+}
+
+td {
+  padding: 15px;
+}
+
+form {
+  border: 2px solid black;
+  background-color: lightgray;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#State {
+  margin-bottom: 25px;
+}
+
+#inquiryType, #bicycleType, #SubmissionDate {
+  float: none;
+}
+
+#createPassword {
+  width: 50%;
+}
+
+@media only screen and (max-width: 767px) {
+  /* hide desktop menu if mobile menu is displayed */
+  #nav_menu {
+    display: none;
+}
+
+  #mobile_menu {
+    display: block;
+  }
+
+  #salesVideo {
+    width: 300px;
+    height: 175px;
+  }
+
+  td {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  table {
+    width: auto;
+    height: auto;
+  }
+  
+  label {
+    display: block; 
+    margin-bottom: 10px;
+  }
+  
+  input { 
+    margin-bottom: 25px;
+  }
+  
+  #Message {
+    width: 65%;
+    height: 100px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #mobile_menu {
+    display: none;
+  }
+
+  #leftColumn {
+    width: 40%;
+    float: left;
+  }
+
+  #rightColumn {
+    width: 40%;
+    float: right;
+  }
+
+  form { 
+    display: table;  
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    padding: 25px;
+    background-color: lightgray;
+  }
+  
+  .formInput { 
+    display: table-row;
+  }
+  
+  label { 
+    display: table-cell; 
+    float: left;
+  }
+  
+  input { 
+    display: table-cell; 
+    float: right;
+    margin-bottom: 25px;
+  }
+  
+  #Message {
+    margin-top: 25px;
+    width: 100%;
+    height: 100px;
+  }
+
+  #Reset {
+    float: left;
+  }
+  
+  #Submit {
+    float: right;
+  }
+}

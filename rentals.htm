@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!--
+    *****************************************************************************
+    Title Rentals Page
+    Use: Rentals Page for Bicycle Shop Website
+    Author: Hunter Guthrie
+    School/Term: Southern Illinois University, Fall 2022
+    Developed: Sep 28, 2022
+    Tested: Sep 28, 2022; Passed on Chrome and Edge browsers.
+    ******************************************************************************
+    -->
+    <title>Bike Rentals</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta name="description" content="Bike Rentals Page">
+    <meta name="author" content="Hunter Guthrie">
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="CSS/slicknav.css">
+    <link rel="shortcut icon" href="Images/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="JS/jquery.slicknav.min.js" type="text/javascript"></script>
+
+    <!--SlickNav Menu Script for Mobile Devices-->
+    <script type="text/javascript"> $(document).ready(function(){
+      $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); }); </script>
+
+  </head>
+
+  <body id="rentalsPageBody">
+    <h1>Bike Rentals</h1>
+    <nav id="mobile_menu"></nav> 
+    <nav id="nav_menu">
+      <ul>
+        <li><a href="index.htm">Home</a></li>
+        <li><a href="rentals.htm">Bicycle Rentals</a></li>
+        <li><a href="sales.htm">Bicycles For Sale</a></li>
+        <li><a href="services.htm">Bicycle Services</a></li>
+        <li><a href="contact.htm">Contact Us</a></li>
+      </ul>
+    </nav>
+    <h3>Price and Terms:</h3>
+    <p><strong>Street Bikes:</strong></p>
+    <p>$25 to Rent All Day / $15 to Rent 4 Hours</p>
+    <p><strong>Mountain Bikes:</strong></p>
+    <p>$50 to Rent All Day / $30 to Rent 4 Hours</p>
+    <p><strong>Equipment:</strong></p>
+    <p>Helmets / $5 per Helmet</p>
+    <h2>Current available rentals:</h2>
+    <div id="leftColumn">
+      <p><strong>Diamondback Metric 1</strong></p>
+      <img class="rentalImage" alt="DiamondBack" src="Images/metric-1.jpg">
+      <p>
+        The DiamondBack Metric 1 is an aluminum frame bike featuring V-brakes and an 8-speed drivetrain. 
+        This lightweight bike is perfect for riding through the city.
+      </p>
+      <br>
+      <p><strong>Gravity Avenue 14-Speed Road Bike</strong></p>
+      <img class="rentalImage" alt="Gravity Avenue" src="Images/avenue.jpg">
+      <p>
+        The Gravity Avenue 14-Speed Road Bike is a comfortable bike featuring 14-speeds, and an aluminum semi-compact frame.
+      </p>
+    </div>
+    <div id="rightColumn">
+      <p><strong>Siskiu T7</strong></p>
+      <img class="rentalImage" alt="Siskiu" src="Images/SISKIU.jpg">
+      <p>
+        The Siskiu T7 is a mountain bike built to excel on any terrain. The Siskiu T7 features an aluminum frame, and easy shifting
+        which offers great acceleration.
+      </p>
+      <br>
+      <p><strong>2022 Marin Alpine Trail Carbon 1</strong></p>
+      <img class="rentalImage" alt="Marlin" src="Images/Marin.jpg">
+      <p>
+        The 2022 Marin Alpine Trail Carbon 1 features a lightweight carbon fiber frame making it snappy and easy to use on trails. 
+        This bike has excellent handling.
+      </p>
+    </div>
+    <br><br>
+    <footer>
+      <p>
+        <strong> Contact us: </strong>
+        <br>
+        123 N Main St, Normal, IL
+        <br>
+        309-867-5309
+        <br>
+        <a href="https://siu.edu/">www.siu.edu</a>
+      </p>
+    </footer>
+  </body>
+</html>

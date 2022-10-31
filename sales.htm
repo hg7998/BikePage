@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!--
+    *****************************************************************************
+    Title: Bicycle Sales Page
+    Use: Sales Page for Bicycle Shop Website
+    Author: Hunter Guthrie
+    School/Term: Southern Illinois University, Fall 2022
+    Developed: Oct 13, 2022
+    Tested: Oct 13, 2022; Passed on Chrome and Edge browsers.
+    ******************************************************************************
+    -->
+   <title>Bicycles for Sale</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta name="description" content="Bicycle Sales Page">
+    <meta name="author" content="Hunter Guthrie">
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="CSS/slicknav.css">
+    <link rel="shortcut icon" href="Images/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="JS/jquery.slicknav.min.js" type="text/javascript"></script>
+
+    <!--SlickNav Menu Script for Mobile Devices-->
+    <script type="text/javascript"> $(document).ready(function(){
+      $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); }); </script>
+
+  </head>
+
+  <body id="salesPageBody">
+    <h1>Bicycles for Sale</h1>
+    <nav id="mobile_menu"></nav> 
+    <nav id="nav_menu">
+      <ul>
+        <li><a href="index.htm">Home</a></li>
+        <li><a href="rentals.htm">Bicycle Rentals</a></li>
+        <li><a href="sales.htm">Bicycles For Sale</a></li>
+        <li><a href="services.htm">Bicycle Services</a></li>
+        <li><a href="contact.htm">Contact Us</a></li>
+      </ul>
+    </nav>
+    <h3>Check out our available sales inventory below:</h3>
+    <video id="salesVideo" src="Media/Mountain Bike Video.mp4" controls></video>
+    <div id="leftColumn">
+      <p><strong>Aventure Ebike by Aventon</strong></p>
+      <p><strong>$1,799.00</strong></p>
+      <img class="salesImage" alt="Aventure" src="Images/Aventure.jpg">
+      <p>
+        Looking for an electric option? Then the Adventure EBike by Aventon is just for you. The Adventure EBike by Aventon boasts a
+        top speed of 28 MPH and has an average range of 45 miles.
+      </p>
+      <br>
+      <p><strong>Retrospec Atlas Fitness Hybrid Bike</strong></p>
+      <p><strong>$449.99</strong></p>
+      <img class="salesImage" alt="Retrospec Atlas" src="Images/Atlas.jpg">
+      <p>
+        Enjoy your trek through the city or the trails with the Retrospec Atlas Fitness Hybrid Bike. Perfect for the trails or roads, hybrid
+        bikes are a great option for beginners. The Retrospec Atlas Fitness Hybrid Bike will be sure to give you a comfortable ride.
+      </p>
+    </div>
+    <div id="rightColumn">
+      <p><strong>Colnago C68 Disc Road</strong></p>
+      <p><strong>$7,099.00</strong></p>
+      <img class="salesImage" alt="Colnago C68" src="Images/Colnago.jpg">
+      <p>
+        Made in Italy, the Colnago C68 offers superior performance. With a carbon fiber frame and perfect handling, you won't be disappointed
+        with the Colnago 68.
+      </p>
+      <br>
+      <p><strong>2022 Marin Alpine Trail Carbon 1</strong></p>
+      <p><strong>$3,549.00</strong></p>
+      <img class="salesImage" alt="2022 Marin Alpine" src="Images/Marin.jpg">
+      <p>
+        The 2022 Marin Alpine Trail Carbon 1 features a lightweight carbon fiber frame making it snappy and easy to use on trails. 
+        This bike has excellent handling.
+      </p>
+    </div>
+    <footer>
+      <p>
+        <strong> Contact us: </strong>
+        <br>
+        123 N Main St, Normal, IL
+        <br>
+        309-867-5309
+        <br>
+        <a href="https://siu.edu/">www.siu.edu</a>
+      </p>
+    </footer>
+  </body>
+</html>
